@@ -8,4 +8,8 @@ class SunspotGenerator < Rails::Generators::Base
     template "sunspot.yml", "config/sunspot.yml"
   end
 
+  def copy_tasks
+	template "sunspot_tasks.rake", "lib/tasks/sunspot_tasks.rake"
+  end
+
 end
